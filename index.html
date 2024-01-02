@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<style>
+    *{
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+        
+
+    }
+   
+    .form{
+        display:flex;
+       
+        justify-content: center;
+        margin-top: 7svh;
+       
+    }
+    .btn{
+        margin:3svh 7.5svw;
+        width: 6svw;
+        height: 4svh;
+        color: white;
+        font-weight: bold;
+        background-color: #00A868;
+        border-radius: 10px;
+
+    }
+    .btn:hover{
+        color:#00A868;
+        background-color: white;
+    }
+    .field{
+        height: 5svh;
+        width: 20svw;
+        border-radius: 25px;
+        padding-left: 4%;
+        
+    }
+    h1{
+        display:flex;
+        justify-content: center;
+        margin-top: 10svh;
+    }
+    .container{
+      margin: auto;
+        margin-top: 15svh;
+      width: 50svw;
+        border: 5px solid rgb(255, 252, 252);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 25px;
+    }
+</style>
+</head>
+<body>
+   <div class="container">
+    <h1>Registration Form</h1>
+    <div class="form">
+        <form action="/" method="POST">
+            <input type="email"  class="field" placeholder="Email" name="Email" required><br><br>
+            <input type="text" class="field" placeholder="Phone" name="Phone"  minlength="10" maxlength="13" required><br><br>
+            <input type="text" class="field" placeholder="Name" name="Name" required><br><br>
+            <input type="text" class="field" maxlength="50" placeholder="Address" name="Address" required><br><br>
+            <input type="submit" class="btn">
+        </form>
+    </div>
+   </div>
+</body>
+</html>
